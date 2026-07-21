@@ -1,6 +1,7 @@
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&amp;color=0:050014,50:4c1d95,100:0284c7&amp;height=210&amp;section=header&amp;text=AMIRREZA%20GHAFFARIAN&amp;fontSize=42&amp;fontColor=e9d5ff&amp;animation=fadeIn&amp;fontAlignY=38&amp;desc=AI%20%26%20ROBOTICS%20%7C%20MASHHAD%20%7C%20SYSTEM%20ONLINE&amp;descAlignY=60&amp;descSize=15" alt="Amirreza Ghaffarian — AI and Robotics" />
+<h1>AMIRREZA GHAFFARIAN</h1>
+<h3>AI &amp; ROBOTICS // MASHHAD // SYSTEM ONLINE</h3>
 
 <a href="https://git.io/typing-svg">
   <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&amp;weight=700&amp;size=22&amp;duration=2800&amp;pause=900&amp;color=A855F7&amp;center=true&amp;vCenter=true&amp;repeat=true&amp;width=900&amp;lines=M.Sc.+in+Artificial+Intelligence+%26+Robotics;Training+agents+to+learn%2C+adapt%2C+and+decide;Building+at+the+edge+of+AI+and+human+imagination" alt="Typing introduction" />
