@@ -30,6 +30,14 @@
   <code>CLEARANCE://OMEGA</code>
 </p>
 
+<p>
+  <code>EXPERIENCE://10Y_PROGRAMMING</code>
+  &nbsp;·&nbsp;
+  <code>FRONTEND://7Y_WEB_APPS</code>
+  &nbsp;·&nbsp;
+  <code>AI_ENGINEERING://7Y</code>
+</p>
+
 <br />
 
 <a href="https://amirgh23.github.io/">
@@ -147,6 +155,11 @@ CURRENT STATE
 RESEARCHING
 BUILDING
 OPTIMIZING
+
+EXPERIENCE SIGNAL
+10 YEARS PROGRAMMING
+7 YEARS FRONTEND & WEB APPS
+7 YEARS ARTIFICIAL INTELLIGENCE
 ```
 
 </td>
@@ -163,6 +176,10 @@ operator:
   codename: AMIRGH23
   role: AI Agent Engineer and Full-Stack Developer
   academic_field: AI and Robotics, M.Sc. completed in 2026
+  experience:
+    programming: 10 years
+    frontend_and_web_apps: 7 years
+    artificial_intelligence: 7 years
 
 mission:
   build: production-oriented intelligent systems
