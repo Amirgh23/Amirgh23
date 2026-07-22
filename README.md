@@ -4,7 +4,7 @@
   <img
     src="./assets/svg/hero.svg"
     width="100%"
-    alt="AMIRGH23 Neural Nexus — AI Systems and Autonomous Intelligence Engineer"
+    alt="AMIRGH23 MER23LIN — AI Agent Engineer and Full-Stack Developer"
   />
 </a>
 
@@ -14,10 +14,10 @@
   <code>SYSTEM://AMIRGH23</code>
 </h1>
 
-<h3>AI Systems Engineer · Autonomous Intelligence Architect</h3>
+<h3>AI Agent Engineer · Full-Stack Developer · AI & Robotics Engineer</h3>
 
 <p>
-  Designing local, agentic, retrieval-augmented, and production-oriented AI systems.
+  Building agentic AI systems, full-stack products, intelligent interfaces, and production-ready web experiences.
 </p>
 
 <p>
@@ -34,8 +34,8 @@
 
 <a href="https://amirgh23.github.io/">
   <img
-    src="https://img.shields.io/badge/ENTER_THE_NEURAL_NEXUS-LAUNCH_SYSTEM-0D1117?style=for-the-badge&logo=vercel&logoColor=FF2BD6"
-    alt="Enter the Interactive Neural Nexus"
+    src="https://img.shields.io/badge/ENTER_MER23LIN-LAUNCH_SYSTEM-0D1117?style=for-the-badge&logo=vercel&logoColor=FF2BD6"
+    alt="Enter MER23LIN"
   />
 </a>
 
@@ -61,7 +61,7 @@
 </a>
 <a href="https://amirgh23.github.io/">
   <img
-    src="https://img.shields.io/badge/Portfolio-Neural_Nexus-0D1117?style=flat-square&logo=githubpages&logoColor=FF2BD6"
+    src="https://img.shields.io/badge/Portfolio-MER23LIN-0D1117?style=flat-square&logo=githubpages&logoColor=FF2BD6"
     alt="Interactive portfolio"
   />
 </a>
@@ -85,6 +85,7 @@
  ·  <a href="#core-domains"><code>CORE DOMAINS</code></a>
  ·  <a href="#architecture"><code>ARCHITECTURE</code></a>
  ·  <a href="#capability-matrix"><code>CAPABILITIES</code></a>
+ ·  <a href="#experience-log"><code>EXPERIENCE</code></a>
  ·  <a href="#research-nodes"><code>RESEARCH</code></a>
  ·  <a href="#telemetry"><code>TELEMETRY</code></a>
  ·  <a href="#uplink"><code>UPLINK</code></a>
@@ -103,7 +104,7 @@
 
 ### `IDENTITY://AMIRREZA_GHAFFARIAN`
 
-I'm **Amirreza Ghaffarian**, an AI and robotics engineer focused on designing intelligent systems that move beyond isolated model demos and operate as complete, dependable software systems.
+I'm **Amirreza Ghaffarian**, an AI agent engineer, full-stack developer, and AI & robotics engineer focused on building intelligent systems that move beyond isolated demos and operate as complete, dependable software products.
 
 My work connects:
 
@@ -112,7 +113,9 @@ My work connects:
 * autonomous agent workflows,
 * retrieval and knowledge systems,
 * local AI infrastructure,
-* and intelligent user interfaces.
+* intelligent user interfaces,
+* frontend and full-stack product engineering,
+* and international WordPress delivery and technical SEO.
 
 I am particularly interested in systems that can **perceive information, retrieve knowledge, reason over context, use tools, learn from feedback, and execute reliable actions**.
 
@@ -126,13 +129,16 @@ CODENAME
 AMIRGH23
 
 ROLE
-AI SYSTEMS ENGINEER
+AI AGENT ENGINEER
+
+SECONDARY ROLE
+FULL-STACK DEVELOPER
 
 SPECIALIZATION
 AUTONOMOUS INTELLIGENCE
 
 ACADEMIC CORE
-AI & ROBOTICS M.Sc.
+AI & ROBOTICS M.Sc. · 2026
 
 BASE
 MASHHAD · IRAN
@@ -155,8 +161,8 @@ OPTIMIZING
 operator:
   name: Amirreza Ghaffarian
   codename: AMIRGH23
-  role: AI Systems Engineer
-  academic_field: AI and Robotics
+  role: AI Agent Engineer and Full-Stack Developer
+  academic_field: AI and Robotics, M.Sc. completed in 2026
 
 mission:
   build: production-oriented intelligent systems
@@ -232,9 +238,9 @@ Building agents capable of tool use, structured reasoning, workflow orchestratio
 
 ### `01.4 // INTELLIGENT INTERFACES`
 
-Creating React and TypeScript interfaces that make AI reasoning, retrieval, system state, and complex workflows visible and controllable.
+Creating React, Next.js, TypeScript, and modern CSS interfaces that make AI reasoning, retrieval, system state, and complex workflows visible and controllable, with working familiarity in Angular.
 
-`REACT` · `TYPESCRIPT` · `AI UX` · `SYSTEM TELEMETRY`
+`REACT` · `NEXT.JS` · `TYPESCRIPT` · `ANGULAR` · `AI UX`
 
 </td>
 </tr>
@@ -351,6 +357,19 @@ Creating React and TypeScript interfaces that make AI reasoning, retrieval, syst
 * Resource-aware model selection
 
 `VLLM` · `QUANTIZATION` · `GPU SERVING` · `AIR-GAPPED AI`
+
+<br />
+
+### `02.9 // FRONTEND & FULL-STACK ENGINEERING`
+
+* Component-driven interfaces with React, TypeScript, Next.js, Redux, and React Hooks
+* Responsive UI systems with Tailwind CSS, Bootstrap, MUI, CSS Grid, and Flexbox
+* Working familiarity with Angular and modern ECMAScript
+* Full-stack application architecture with MongoDB and PostgreSQL
+* Interactive 3D experiences with Three.js
+* Git-based delivery, maintainable frontend architecture, and API integration
+
+`REACT` · `NEXT.JS` · `ANGULAR` · `TYPESCRIPT` · `MONGODB` · `POSTGRESQL`
 
 ---
 
@@ -488,7 +507,25 @@ alt="AMIRGH23 Cybernetic Capability Matrix"
 <tr>
 <td valign="top"><strong>Intelligent Interfaces</strong></td>
 <td valign="top">AI dashboards, observability, interactive system control</td>
-<td valign="top"><code>React</code> <code>TypeScript</code> <code>Three.js</code></td>
+<td valign="top"><code>React</code> <code>Next.js</code> <code>TypeScript</code> <code>Three.js</code></td>
+</tr>
+
+<tr>
+<td valign="top"><strong>Frontend Engineering</strong></td>
+<td valign="top">Responsive interfaces, state management, design systems, interactive UI</td>
+<td valign="top"><code>React</code> <code>Angular</code> <code>Redux</code> <code>Tailwind</code> <code>MUI</code></td>
+</tr>
+
+<tr>
+<td valign="top"><strong>Full-Stack & Data</strong></td>
+<td valign="top">Product architecture, API integration, document and relational data</td>
+<td valign="top"><code>Next.js</code> <code>MongoDB</code> <code>PostgreSQL</code> <code>Git</code></td>
+</tr>
+
+<tr>
+<td valign="top"><strong>Web Delivery</strong></td>
+<td valign="top">International WordPress delivery, technical SEO, performance and commerce sites</td>
+<td valign="top"><code>WordPress</code> <code>SEO</code> <code>Screaming Frog</code></td>
 </tr>
 </table>
 
@@ -501,8 +538,59 @@ alt="AMIRGH23 Cybernetic Capability Matrix"
 <img src="https://img.shields.io/badge/Transformers-LLM_SYSTEMS-0D1117?style=for-the-badge&logo=huggingface&logoColor=FFD21E" alt="Transformers" />
 <img src="https://img.shields.io/badge/React-INTELLIGENT_UI-0D1117?style=for-the-badge&logo=react&logoColor=00F7FF" alt="React" />
 <img src="https://img.shields.io/badge/TypeScript-SYSTEM_INTERFACES-0D1117?style=for-the-badge&logo=typescript&logoColor=FF2BD6" alt="TypeScript" />
+<img src="https://img.shields.io/badge/Next.js-FULL_STACK-0D1117?style=for-the-badge&logo=nextdotjs&logoColor=00F7FF" alt="Next.js" />
+<img src="https://img.shields.io/badge/Angular-FAMILIAR-0D1117?style=for-the-badge&logo=angular&logoColor=FF2BD6" alt="Angular" />
+<img src="https://img.shields.io/badge/MongoDB-DOCUMENT_DATA-0D1117?style=for-the-badge&logo=mongodb&logoColor=00F7FF" alt="MongoDB" />
+<img src="https://img.shields.io/badge/PostgreSQL-RELATIONAL_DATA-0D1117?style=for-the-badge&logo=postgresql&logoColor=FF2BD6" alt="PostgreSQL" />
+<img src="https://img.shields.io/badge/WordPress-GLOBAL_DELIVERY-0D1117?style=for-the-badge&logo=wordpress&logoColor=00F7FF" alt="WordPress" />
 
 </div>
+
+---
+
+<a id="experience-log"></a>
+
+## `05 // EXPERIENCE & EDUCATION LOG`
+
+### `CURRENT NODE // PARSEH PARDAZ NIK DANESH`
+
+**AI Agent Engineer & Full-Stack Developer** · Mashhad, Iran  
+`OCT 2025 / MEHR 1404 — PRESENT`
+
+Building agentic AI capabilities and full-stack software products, connecting intelligent workflows, application logic, data systems, and production interfaces.
+
+### `INTERNATIONAL WEB NETWORK // INDEPENDENT COLLABORATIONS`
+
+**WordPress & Web Developer** · Australia · United States · Iran  
+`2024 — PRESENT`
+
+* Collaborated with **15+ companies** across Australia, the United States, and Iran on WordPress websites during the last two years.
+* Delivered commercial, bilingual, corporate, and interactive web experiences.
+* Completed **10+ additional small programming projects** during the same period.
+
+### `SELECTED PROFESSIONAL HISTORY`
+
+| PERIOD | ROLE / ORGANIZATION | DELIVERY |
+|:--|:--|:--|
+| 2024–2025 | Senior Web Specialist · Marham Andisheh Salamat / official Zuiko Japan representative | `iwpsa.ir`, `woundacademy.ir`, and bilingual React + Three.js experience `zuiko.ir` |
+| Jul 2025 | WordPress Designer · Almas Taranom Pasargad | E-commerce website `atpglass.ir` |
+| Oct–Nov 2024 | Website Designer · Ajandam Toos | WordPress commerce site `shop.ajandam.ir` |
+| Aug–Dec 2023 | Frontend & AI Developer · AIAndHealth.net, USA | Two AI-assisted recommendation web apps for methadone and acetaminophen poisoning control |
+| Nov–Dec 2019 | Interactive Game UI & Image Processing · Parsan | Interfaces and image-processing algorithms for children's interactive games |
+| Jun–Sep 2018 | Passive Network Technician · Septak | ATM network deployment for Bank Melli across Razavi Khorasan using MikroTik |
+
+### `ACADEMIC CHANNEL`
+
+| DEGREE | INSTITUTION | STATUS |
+|:--|:--|:--|
+| M.Sc. Computer Engineering — AI & Robotics | Islamic Azad University, Mashhad | **Completed 2026** |
+| B.Sc. Computer Engineering — Artificial Intelligence | Quchan University of Technology | 2017–2023 |
+
+### `EXTENDED TOOLCHAIN`
+
+`HTML` · `CSS` · `JavaScript / ES6+` · `TypeScript` · `React` · `React Hooks` · `Redux` · `Next.js` · `Angular (familiar)` · `Tailwind CSS` · `Bootstrap` · `MUI` · `CSS Grid` · `Flexbox` · `Three.js` · `MongoDB` · `PostgreSQL` · `Git` · `WordPress` · `SEO` · `Screaming Frog` · `Python` · `PyTorch` · `TensorFlow` · `Keras` · `OpenCV` · `YOLO` · `NumPy` · `Pandas` · `MATLAB` · `Photoshop` · `Blender 3D`
+
+**Languages:** English — professional (`IELTS 6`) · German — intermediate
 
 ---
 
@@ -787,7 +875,7 @@ RESEARCH
 
 <br />
 
-**Interactive Neural Nexus**
+**Interactive MER23LIN**
 [amirgh23.github.io](https://amirgh23.github.io/)
 
 <br />
@@ -826,7 +914,7 @@ UPLINK         AVAILABLE
   <img
     src="./assets/svg/footer.svg"
     width="100%"
-    alt="Enter the AMIRGH23 Neural Nexus"
+    alt="Enter AMIRGH23 MER23LIN"
   />
 </a>
 

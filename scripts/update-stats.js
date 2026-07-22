@@ -14,7 +14,7 @@ const xml = (value) => String(value ?? '').replace(/[&<>'"]/g, (char) => ({ '&':
 const compactDate = (value) => new Date(value).toISOString().replace('T', ' ').slice(0, 16) + ' UTC';
 
 async function github(endpoint) {
-  const headers = { Accept: 'application/vnd.github+json', 'User-Agent': 'neural-nexus-profile', 'X-GitHub-Api-Version': '2022-11-28' };
+  const headers = { Accept: 'application/vnd.github+json', 'User-Agent': 'mer23lin-profile', 'X-GitHub-Api-Version': '2022-11-28' };
   if (token) headers.Authorization = `Bearer ${token}`;
   const response = await fetch(`https://api.github.com${endpoint}`, { headers });
   if (!response.ok) throw new Error(`GitHub API ${response.status} for ${endpoint}`);
@@ -59,7 +59,7 @@ async function main() {
     await Promise.all([fs.writeFile(path.join(svgDir, 'activity.svg'), design.activity(profile, data)), fs.writeFile(path.join(svgDir, 'neural-core.svg'), design.neural(profile, data))]);
     profile.lastUpdated = generated;
     await fs.writeFile(profilePath, `${JSON.stringify(profile, null, 2)}\n`);
-    console.log(`Neural Nexus updated from public GitHub data at ${generated}.`);
+    console.log(`MER23LIN updated from public GitHub data at ${generated}.`);
   } catch (error) {
     const outputsExist = await Promise.all(['activity.svg', 'neural-core.svg'].map(async (file) => { try { await fs.access(path.join(svgDir, file)); return true; } catch { return false; } }));
     if (outputsExist.every(Boolean)) { console.warn(`GitHub data unavailable; preserving last valid SVGs. ${error.message}`); return; }
