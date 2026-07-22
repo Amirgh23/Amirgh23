@@ -173,7 +173,7 @@ primary_interests:
   - Local and Secure AI Infrastructure
 ```
 
-<details>
+<details open>
 <summary><code>OPEN://RETRO_ASCII_OPERATOR_PORTRAIT</code></summary>
 
 <br />
