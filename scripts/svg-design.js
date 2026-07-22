@@ -1,0 +1,58 @@
+'use strict';
+
+const esc = (value) => String(value ?? '').replace(/[&<>'"]/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&apos;', '"': '&quot;' })[char]);
+const palette = ['#00F7FF', '#FF2BD6', '#8B5CF6', '#FF304F', '#39FF14'];
+const shell = (id, title, subtitle, body, height = 500, accent = '#00F7FF') => `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="${height}" viewBox="0 0 1200 ${height}" role="img" aria-labelledby="${id}-title ${id}-desc">
+<title id="${id}-title">${esc(title)}</title><desc id="${id}-desc">${esc(subtitle)}</desc>
+<defs><linearGradient id="${id}-edge"><stop stop-color="#00F7FF"/><stop offset=".5" stop-color="#8B5CF6"/><stop offset="1" stop-color="#FF2BD6"/></linearGradient><pattern id="${id}-grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" fill="none" stroke="#00F7FF" stroke-opacity=".045"/></pattern><filter id="${id}-glow" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><style>.ui{font-family:Oxanium,Rajdhani,Arial,sans-serif}.mono{font-family:'Share Tech Mono','Courier New',monospace}.muted{fill:#7890A8}.bright{fill:#E7FCFF}.cyan{fill:#00F7FF}.pink{fill:#FF2BD6}.green{fill:#39FF14}.label{font-size:12px;letter-spacing:2px}.small{font-size:11px}.pulse{animation:${id}Pulse 2.8s ease-in-out infinite}.flow{stroke-dasharray:7 12;animation:${id}Flow 5s linear infinite}@keyframes ${id}Pulse{50%{opacity:.35}}@keyframes ${id}Flow{to{stroke-dashoffset:-76}}@media(prefers-reduced-motion:reduce){*{animation:none!important}}</style></defs>
+<path d="M18 1H1182L1199 18V${height - 18}L1182 ${height - 1}H18L1 ${height - 18}V18Z" fill="#02030A" stroke="url(#${id}-edge)" stroke-width="2"/><path d="M2 2h1196v${height - 4}H2z" fill="url(#${id}-grid)"/>
+<path d="M26 66H1174" stroke="${accent}" stroke-opacity=".18"/><text x="34" y="40" class="mono cyan label">${esc(title)}</text><text x="1166" y="40" text-anchor="end" class="mono muted small">${esc(subtitle)}</text>${body}</svg>`;
+
+function hero() {
+  const body = `<g class="ui"><text x="58" y="111" class="mono green label">● NETWORK ONLINE / OMEGA CLEARANCE</text><text x="58" y="222" class="bright" font-size="82" font-weight="800" letter-spacing="5">AMIRGH23</text><text x="61" y="270" fill="url(#hero-edge)" font-size="30" font-weight="700" letter-spacing="12">NEURAL NEXUS</text><text x="61" y="312" class="bright" font-size="18" letter-spacing="3">AUTONOMOUS INTELLIGENCE ARCHITECT</text><text x="61" y="352" class="muted" font-size="15">AI systems that perceive, retrieve, learn and act.</text></g>
+  <g transform="translate(58 389)" class="mono"><path d="M0 0h500l15 15v56H0Z" fill="#050816" stroke="#00F7FF" stroke-opacity=".4"/><text x="20" y="28" class="cyan label">THE FUTURE IS NOT PREDICTED.</text><text x="20" y="53" class="bright" font-size="16">IT IS ENGINEERED.</text><rect x="20" y="63" width="455" height="3" fill="#172033"/><rect x="20" y="63" width="428" height="3" fill="url(#hero-edge)"/></g>
+  <g transform="translate(880 250)" filter="url(#hero-glow)"><circle r="162" fill="#050816" stroke="#00F7FF" stroke-opacity=".16"/><circle r="126" fill="none" stroke="#FF2BD6" stroke-width="2" class="flow"/><circle r="93" fill="none" stroke="#8B5CF6" stroke-dasharray="3 10"/><circle r="55" fill="#00F7FF" fill-opacity=".12" stroke="#00F7FF"/><circle r="24" fill="#FF2BD6"/><g stroke="#00F7FF" stroke-opacity=".5"><path d="M-186 0h95M91 0h95M0-186v95M0 91v95"/></g><g class="pulse" fill="#39FF14"><circle cx="-126" r="6"/><circle cx="126" r="6"/><circle cy="-126" r="6"/><circle cy="126" r="6"/></g><text y="5" text-anchor="middle" class="mono bright small">CORE</text></g><g class="mono muted small"><text x="1052" y="448">NODE 87558156</text><text x="1052" y="467">SYNC 94%</text></g>`;
+  return shell('hero', 'SYSTEM // AMIRGH23', 'NEURAL NEXUS 2.0', body, 500);
+}
+
+function identity() {
+  const body = `<g transform="translate(45 92)"><g><path d="M0 28L28 0h300l28 28v260l-28 28H28L0 288Z" fill="#050816" stroke="#00F7FF"/><circle cx="178" cy="112" r="48" fill="#070B18" stroke="#00F7FF"/><path d="M90 252c10-80 166-80 176 0" fill="#070B18" stroke="#00F7FF"/><path d="M58 44h34M58 44v34M298 44h-34M298 44v34M58 272h34M58 272v-34M298 272h-34M298 272v-34" fill="none" stroke="#FF2BD6" stroke-width="2"/><path d="M30 286h296" stroke="#172033"/><text x="178" y="306" text-anchor="middle" class="mono green small">BIOMETRIC MATCH // 99.7%</text></g>
+  <g transform="translate(410 10)" class="mono"><text class="muted label">AUTHORIZED OPERATOR</text><text y="54" class="bright" font-size="32">AMIRREZA GHAFFARIAN</text><text y="88" class="cyan" font-size="16">AUTONOMOUS INTELLIGENCE ARCHITECT</text><g transform="translate(0 126)"><rect width="650" height="172" fill="#050816" stroke="#8B5CF6" stroke-opacity=".5"/><g class="muted small"><text x="22" y="32">CODENAME</text><text x="340" y="32">STATUS</text><text x="22" y="92">SPECIALIZATION</text><text x="340" y="92">BASE</text></g><g class="bright" font-size="16"><text x="22" y="56">AMIRGH23</text><text x="340" y="56" class="green">● OPERATIONAL</text><text x="22" y="116">LLM / RAG / AGENTS / RL</text><text x="340" y="116">MASHHAD // IRAN</text></g><path d="M22 140h606" stroke="#172033"/><text x="22" y="160" class="pink small">CURRENT MISSION // BUILDING AUTONOMOUS AI SYSTEMS</text></g></g></g>`;
+  return shell('identity', 'IDENTITY // AUTHORIZED OPERATOR', 'OMEGA ACCESS', body, 450, '#FF2BD6');
+}
+
+function skills() {
+  const list = [['LLM ENGINEERING',86,'Transformers · evaluation · inference'],['AGENT SYSTEMS',82,'Tools · orchestration · memory'],['RAG ARCHITECTURE',81,'Retrieval · grounding · vector stores'],['LOCAL AI',76,'GPU inference · private serving'],['COMPUTER VISION',72,'VLM · OCR · perception'],['FULL-STACK SYSTEMS',84,'React · TypeScript · APIs'],['MODEL TRAINING',70,'Datasets · adaptation · validation'],['AI INFRASTRUCTURE',73,'Docker · routing · observability'],['AUTOMATION',80,'Reliable workflows · delivery'],['SECURITY RESEARCH',62,'Scanning · zero-trust patterns']];
+  const cards = list.map(([name, level, desc], i) => { const x=38+(i%2)*568,y=82+Math.floor(i/2)*104; return `<g transform="translate(${x} ${y})" class="mono"><path d="M0 10L10 0h526l10 10v78l-10 10H0Z" fill="#050816" stroke="${i%2?'#8B5CF6':'#00F7FF'}" stroke-opacity=".38"/><text x="18" y="29" class="bright" font-size="15">${name}</text><text x="518" y="29" text-anchor="end" class="cyan" font-size="13">${level}</text><text x="18" y="53" class="muted small">${desc}</text><rect x="18" y="70" width="500" height="5" fill="#172033"/><rect x="18" y="70" width="${level*5}" height="5" fill="${i%2?'#FF2BD6':'#00F7FF'}"/></g>`; }).join('');
+  return shell('skills', 'CAPABILITY MATRIX // 10 MODULES', 'BALANCED SIGNAL LEVELS', cards, 630);
+}
+
+function network() {
+  const nodes=['VISION','RAG','CODE','SECURITY','MEMORY','MCP','OCR','QDRANT','AGENTS','TOOLS']; const points=[[170,130],[390,95],[810,95],[1030,130],[1080,280],[1030,430],[810,465],[390,465],[170,430],[120,280]];
+  const wires=points.map(([x,y])=>`<path d="M600 280L${x} ${y}"/>`).join(''); const items=nodes.map((name,i)=>`<g transform="translate(${points[i][0]} ${points[i][1]})" class="mono"><circle r="51" fill="#050816" stroke="${palette[i%palette.length]}"/><text y="-3" text-anchor="middle" class="bright" font-size="13">${name}</text><text y="18" text-anchor="middle" class="green" font-size="9">● ONLINE</text></g>`).join('');
+  return shell('network','NETWORK MAP // 10 ACTIVE NODES','ALL LINKS NOMINAL',`<g fill="none" stroke="#00F7FF" stroke-opacity=".32" class="flow">${wires}</g><g transform="translate(600 280)"><circle r="96" fill="#050816" stroke="#FF2BD6" stroke-width="2"/><circle r="71" fill="none" stroke="#00F7FF" stroke-dasharray="4 10"/><text y="-5" text-anchor="middle" class="mono bright" font-size="16">AMIRGH23</text><text y="21" text-anchor="middle" class="mono green small">● CORE ONLINE</text></g>${items}`, 560);
+}
+
+function project({ id, name, type, description, tech, status='OPEN', accent='#00F7FF' }) {
+  const body=`<g transform="translate(40 88)" class="mono"><text class="muted label">${esc(id)} // ${esc(type)}</text><text y="48" class="bright" font-size="30">${esc(name)}</text><text y="84" class="muted" font-size="14">${esc(description)}</text><g transform="translate(0 116)"><rect width="760" height="44" fill="#050816" stroke="${accent}" stroke-opacity=".35"/><text x="16" y="27" class="cyan small">${esc(tech)}</text></g><text x="0" y="196" class="green label">● ${esc(status)}</text><text x="182" y="196" class="bright label">ACCESS REPOSITORY ↗</text></g><g transform="translate(1010 180)" filter="url(#project-glow)"><circle r="82" fill="#050816" stroke="${accent}" stroke-width="2"/><circle r="58" fill="none" stroke="#8B5CF6" stroke-dasharray="4 10"/><text text-anchor="middle" y="6" class="mono bright" font-size="18">${esc(id)}</text></g>`;
+  return shell(`project-${id.toLowerCase().replace(/[^a-z0-9]/g,'')}`,`${id} // ${type}`,'PROJECT NODE',body,310,accent);
+}
+
+function footer() {
+  const body=`<g text-anchor="middle"><text x="600" y="108" class="ui bright" font-size="31" font-weight="700" letter-spacing="6">CONNECTION REMAINS OPEN</text><text x="600" y="145" class="mono muted" font-size="13">EXPLORE THE COMPLETE NEURAL NEXUS</text><path d="M350 177h500" stroke="#172033"/><text x="600" y="216" class="mono cyan" font-size="15">THE FUTURE IS NOT PREDICTED. IT IS ENGINEERED.</text><text x="600" y="254" class="mono green small">● AMIRGH23 // SYSTEM ONLINE</text></g>`;
+  return shell('footer','UPLINK // NEURAL NEXUS','END OF TRANSMISSION',body,290,'#FF2BD6');
+}
+
+function activity(profile, data) {
+  const rows=[['LATEST NODE',data.latest.name],['PUBLIC REPOSITORIES',data.user.public_repos],['NETWORK',`${data.user.followers} FOLLOWERS · ${data.stars} STARS`],['PRIMARY LANGUAGES',data.languages.join(' / ')||'UNCLASSIFIED'],['LAST PUSH',new Date(data.latest.pushed_at).toISOString().slice(0,16).replace('T',' ')+' UTC']];
+  const body=rows.map(([k,v],i)=>`<g transform="translate(46 ${92+i*66})" class="mono"><rect width="1108" height="50" fill="${i%2?'#050816':'#070B18'}"/><rect width="4" height="50" fill="${i===0?'#39FF14':'#00F7FF'}"/><text x="22" y="30" class="muted label">${esc(k)}</text><text x="1084" y="30" text-anchor="end" class="bright" font-size="14">${esc(v)}</text></g>`).join('');
+  return shell('activity','LIVE INTELLIGENCE FEED','PUBLIC GITHUB API',body,460);
+}
+
+function neural(profile, data) {
+  const cards=[['NEURAL CORE','94%','#00F7FF'],['PUBLIC NODES',String(data.user.public_repos),'#FF2BD6'],['VECTOR MEMORY',`${data.user.public_repos} REPOS`,'#8B5CF6'],['SECURITY',profile.securityStatus,'#39FF14'],['MODEL ROUTER','OPERATIONAL','#00F7FF'],['COMPUTE',profile.computeNode,'#FF2BD6']];
+  const body=cards.map(([name,value,color],i)=>{const x=38+(i%3)*376,y=88+Math.floor(i/3)*160;return `<g transform="translate(${x} ${y})" class="mono"><path d="M0 10L10 0h328l10 10v116l-10 10H0Z" fill="#050816" stroke="${color}" stroke-opacity=".5"/><text x="18" y="29" class="muted label">${name}</text><text x="18" y="67" class="bright" font-size="18">${esc(value)}</text><rect x="18" y="88" width="302" height="5" fill="#172033"/><rect x="18" y="88" width="${220+i*12}" height="5" fill="${color}"/><text x="18" y="116" class="muted" font-size="9">SYSTEM ${String(i+1).padStart(2,'0')} // NOMINAL</text></g>`;}).join('');
+  return shell('core','NEURAL CORE // SYSTEM TELEMETRY','LIVE CONFIGURATION',body,430,'#8B5CF6');
+}
+
+module.exports={hero,identity,skills,network,project,footer,activity,neural};

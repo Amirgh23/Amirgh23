@@ -3,6 +3,7 @@
 
 const fs = require('node:fs/promises');
 const path = require('node:path');
+const design = require('./svg-design');
 
 const root = path.resolve(__dirname, '..');
 const profilePath = path.join(root, 'data', 'profile.json');
@@ -55,7 +56,7 @@ async function main() {
     const generated = new Date().toISOString();
     const data = { user, latest, stars, languages, generated };
     await fs.mkdir(svgDir, { recursive: true });
-    await Promise.all([fs.writeFile(path.join(svgDir, 'activity.svg'), activitySvg(profile, data)), fs.writeFile(path.join(svgDir, 'neural-core.svg'), neuralSvg(profile, data))]);
+    await Promise.all([fs.writeFile(path.join(svgDir, 'activity.svg'), design.activity(profile, data)), fs.writeFile(path.join(svgDir, 'neural-core.svg'), design.neural(profile, data))]);
     profile.lastUpdated = generated;
     await fs.writeFile(profilePath, `${JSON.stringify(profile, null, 2)}\n`);
     console.log(`Neural Nexus updated from public GitHub data at ${generated}.`);
