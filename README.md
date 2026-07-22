@@ -95,7 +95,7 @@
 
 <a id="operator-profile"></a>
 
-## `00 // OPERATOR PROFILE`
+<img src="./assets/svg/headers/00-operator.svg" width="100%" alt="00 Operator Profile" />
 
 <table>
 <tr>
@@ -177,7 +177,7 @@ primary_interests:
 
 <a id="current-focus"></a>
 
-## `01 // CURRENT OPERATIONAL FOCUS`
+<img src="./assets/svg/headers/01-focus.svg" width="100%" alt="01 Current Operational Focus" />
 
 <table>
 <tr>
@@ -227,7 +227,7 @@ Creating React and TypeScript interfaces that make AI reasoning, retrieval, syst
 
 <a id="core-domains"></a>
 
-## `02 // CORE ENGINEERING DOMAINS`
+<img src="./assets/svg/headers/02-domains.svg" width="100%" alt="02 Core Engineering Domains" />
 
 ### `02.1 // LARGE LANGUAGE MODEL ENGINEERING`
 
@@ -339,7 +339,7 @@ Creating React and TypeScript interfaces that make AI reasoning, retrieval, syst
 
 <a id="architecture"></a>
 
-## `03 // INTELLIGENCE ARCHITECTURE`
+<img src="./assets/svg/headers/03-architecture.svg" width="100%" alt="03 Intelligence Architecture" />
 
 <div align="center">
 
@@ -405,7 +405,7 @@ REACT / TYPESCRIPT INTERFACE
 
 <a id="capability-matrix"></a>
 
-## `04 // CAPABILITY MATRIX`
+<img src="./assets/svg/headers/04-capabilities.svg" width="100%" alt="04 Capability Matrix" />
 
 <div align="center">
 
@@ -489,7 +489,7 @@ alt="AMIRGH23 Cybernetic Capability Matrix"
 
 ---
 
-## `05 // ENGINEERING DIRECTIVES`
+<img src="./assets/svg/headers/05-directives.svg" width="100%" alt="05 Engineering Directives" />
 
 <table>
 <tr>
@@ -548,7 +548,7 @@ Architecture must account for GPU memory, inference speed, deployment environmen
 
 <a id="research-nodes"></a>
 
-## `06 // FEATURED RESEARCH NODES`
+<img src="./assets/svg/headers/06-research.svg" width="100%" alt="06 Featured Research Nodes" />
 
 <table>
 <tr>
@@ -661,7 +661,7 @@ Perturbation-consensus feature selection with reproducible experiments, ablation
 
 ---
 
-## `07 // APPLIED INTELLIGENCE SYSTEMS`
+<img src="./assets/svg/headers/07-applied.svg" width="100%" alt="07 Applied Intelligence Systems" />
 
 Beyond research experiments, my work also explores the architecture of applied AI systems for real operational environments.
 
@@ -706,7 +706,7 @@ BUSINESS DATA
 
 <a id="telemetry"></a>
 
-## `08 // LIVE SYSTEM TELEMETRY`
+<img src="./assets/svg/headers/08-telemetry.svg" width="100%" alt="08 Live System Telemetry" />
 
 <div align="center">
 
@@ -732,7 +732,7 @@ alt="Live Public GitHub Activity for AMIRGH23"
 
 ---
 
-## `09 // SYSTEM TRAJECTORY`
+<img src="./assets/svg/headers/09-trajectory.svg" width="100%" alt="09 System Trajectory" />
 
 ```text
 RESEARCH
@@ -757,7 +757,7 @@ RESEARCH
 
 <a id="uplink"></a>
 
-## `10 // ESTABLISH UPLINK`
+<img src="./assets/svg/headers/10-uplink.svg" width="100%" alt="10 Establish Uplink" />
 
 <table>
 <tr>
