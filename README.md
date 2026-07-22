@@ -552,12 +552,13 @@ alt="AMIRGH23 Cybernetic Capability Matrix"
 
 ## `05 // EXPERIENCE & EDUCATION LOG`
 
-### `CURRENT NODE // PARSEH PARDAZ NIK DANESH`
+### [`CURRENT NODE // PARSEH PARDAZ NIK DANESH`](https://ppnd.ir/)
 
 **AI Agent Engineer & Full-Stack Developer** · Mashhad, Iran  
 `OCT 2025 / MEHR 1404 — PRESENT`
 
-Building agentic AI capabilities and full-stack software products, connecting intelligent workflows, application logic, data systems, and production interfaces.
+Building agentic AI capabilities and full-stack software products for an integrated human-resources management company, connecting intelligent workflows, application logic, data systems, and production interfaces.  
+**Company website:** [ppnd.ir](https://ppnd.ir/)
 
 ### `INTERNATIONAL WEB NETWORK // INDEPENDENT COLLABORATIONS`
 
