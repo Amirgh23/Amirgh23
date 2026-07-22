@@ -11,7 +11,9 @@ walk(path.join(root, 'assets', 'svg'));
 const failures = [];
 for (const ref of svgRefs) if (!fs.existsSync(path.join(root, ref))) failures.push(`Missing README image: ${ref}`);
 for (const file of files) { const source = fs.readFileSync(file, 'utf8'); if (!source.startsWith('<svg') || !source.includes('</svg>')) failures.push(`Malformed SVG wrapper: ${file}`); if (!/viewBox="0 0 \d+ \d+"/.test(source)) failures.push(`Missing viewBox: ${file}`); if (/<script\b/i.test(source) || /javascript:/i.test(source)) failures.push(`Unsafe SVG content: ${file}`); if (!/<title\b/.test(source) || !/<desc\b/.test(source)) failures.push(`Missing title/desc: ${file}`); }
-const all = files.map((f) => fs.readFileSync(f, 'utf8')).join('\n') + readme;
+// Embedded raster payloads are opaque binary data and can contain accidental
+// credential-like byte sequences. Scan the surrounding SVG markup instead.
+const all = files.map((f) => fs.readFileSync(f, 'utf8').replace(/data:image\/[a-z0-9.+-]+;base64,[a-z0-9+/=]+/gi, 'data:image/embedded;base64,[omitted]')).join('\n') + readme;
 if (/(ghp_|github_pat_|AIza|BEGIN (RSA |OPENSSH )?PRIVATE KEY)/i.test(all)) failures.push('Credential-like content detected');
 if (failures.length) { console.error(failures.join('\n')); process.exit(1); }
 console.log(`Validated ${files.length} SVG files and ${svgRefs.length} README image references.`);

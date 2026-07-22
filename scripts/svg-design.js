@@ -21,13 +21,72 @@ function frame(id, eyebrow, code, content, height=500) {
   ${content}</svg>`;
 }
 
-function hero(){return frame('hero','AMIRGH23 / MER23LIN','INTERFACE 03 — ONLINE',`
-  <style>.hero-kicker{animation:heroFlicker 6s steps(1,end) infinite}.hero-signal{stroke-dasharray:90 1035;animation:heroSignal 5.5s linear infinite}.hero-orbit{transform-box:fill-box;transform-origin:center}.hero-orbit-a{animation:heroSpin 18s linear infinite}.hero-orbit-b{animation:heroSpinBack 12s linear infinite}.hero-orbit-c{animation:heroSpin 8s linear infinite}.hero-core{transform-box:fill-box;transform-origin:center;animation:heroBreathe 2.8s ease-in-out infinite}.hero-sweep{animation:heroSweep 4.2s ease-in-out infinite}@keyframes heroSpin{to{transform:rotate(360deg)}}@keyframes heroSpinBack{to{transform:rotate(-360deg)}}@keyframes heroBreathe{50%{transform:scale(1.16);opacity:.72}}@keyframes heroSignal{to{stroke-dashoffset:-1125}}@keyframes heroSweep{0%,12%{transform:translateX(0);opacity:0}25%,72%{opacity:.42}88%,100%{transform:translateX(446px);opacity:0}}@keyframes heroFlicker{0%,91%,94%,100%{opacity:1}92%,93%{opacity:.32}}@media(prefers-reduced-motion:reduce){.hero-kicker,.hero-signal,.hero-orbit,.hero-core,.hero-sweep{animation:none!important}}</style>
-  <path d="M38 67H1162" class="hero-signal" fill="none" stroke="#00F7FF" stroke-width="1.5" stroke-opacity=".72"/>
-  <g class="sans"><text x="64" y="132" class="mono mint label hero-kicker">AI AGENT ENGINEERING · FULL-STACK SYSTEMS</text><text x="60" y="232" class="ice" font-size="78" font-weight="650" letter-spacing="-2">AMIRGH23</text><text x="63" y="282" class="blue" font-size="25" font-weight="500" letter-spacing="9">MER23LIN</text><text x="63" y="334" class="soft" font-size="18">AI &amp; Robotics · Frontend · Full Stack · Intelligent Interfaces</text><text x="63" y="375" class="faint" font-size="14">Engineering intelligence and dependable software beyond the demo.</text></g>
-  <g transform="translate(63 411)" class="mono"><rect width="468" height="52" rx="8" fill="#0B0718" stroke="#00F7FF" stroke-opacity=".52"/><rect class="hero-sweep" width="22" height="52" fill="#00F7FF" opacity="0"/><path d="M0 0h155" stroke="#FF2BD6" stroke-width="2"/><text x="18" y="32" class="ice" font-size="13">THE FUTURE IS ENGINEERED.</text><circle cx="437" cy="26" r="5" fill="#FF2BD6" class="pulse" filter="url(#hero-soft)"/></g>
-  <g transform="translate(886 255)"><circle r="151" fill="#080615" stroke="#FF2BD6" stroke-opacity=".45"/><g class="hero-orbit hero-orbit-a"><circle r="114" fill="none" stroke="#8B5CF6" stroke-opacity=".62" stroke-dasharray="42 18"/><circle cy="-114" r="5" fill="#FF2BD6" filter="url(#hero-soft)"/></g><g class="hero-orbit hero-orbit-b"><circle r="79" fill="none" stroke="#00F7FF" stroke-opacity=".82" stroke-dasharray="66 12"/><circle cx="79" r="4" fill="#00F7FF"/></g><g class="hero-orbit hero-orbit-c"><circle r="52" fill="none" stroke="#FF2BD6" stroke-opacity=".32" stroke-dasharray="8 22"/><circle cx="-52" r="3" fill="#FF7AE5"/></g><g class="hero-core"><circle r="38" fill="#FF2BD6" fill-opacity=".12" stroke="#FF7AE5"/><circle r="10" fill="#00F7FF" filter="url(#hero-soft)"/></g><g stroke="#00F7FF" stroke-opacity=".38"><path d="M-180 0h101M79 0h101M0-180v101M0 79v101"/></g></g>
-  <g class="mono faint micro"><text x="1048" y="440">CORE SYNC</text><text x="1048" y="459" class="ice">94.0%</text></g>`,500)}
+function hero(pngBase64){
+  if(!pngBase64) throw new Error('hero() requires the MER23LIN base image as base64');
+  const shell='M48 0H1576L1672 96V847L1576 943H96L0 847V72Z';
+  const inner='M54 8H1572L1664 100V843L1572 935H100L8 843V76Z';
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="1672" height="943" viewBox="0 0 1672 943" role="img" aria-labelledby="hero-title hero-desc">
+  <title id="hero-title">MER23LIN — AI Agent Engineer and Full-Stack Developer</title>
+  <desc id="hero-desc">Animated retro-neon MER23LIN hero with a cyberpunk cut frame, electrical neural core and flowing circuit signals.</desc>
+  <defs>
+    <clipPath id="hero-shell"><path d="${shell}"/></clipPath>
+    <clipPath id="hero-core-clip"><circle cx="1336" cy="458" r="202"/></clipPath>
+    <linearGradient id="hero-frame" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#00F7FF"/><stop offset=".46" stop-color="#8B5CF6"/><stop offset="1" stop-color="#FF2BD6"/></linearGradient>
+    <radialGradient id="hero-core-flash"><stop stop-color="#FFF"/><stop offset=".16" stop-color="#FF7AE5" stop-opacity=".96"/><stop offset=".48" stop-color="#FF2BD6" stop-opacity=".28"/><stop offset="1" stop-color="#FF2BD6" stop-opacity="0"/></radialGradient>
+    <filter id="hero-cyan-glow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="hero-hot-glow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <style>
+      .bolt{fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:18 10;animation:heroBolt 1.15s linear infinite,heroFlicker 2.4s steps(1,end) infinite}
+      .bolt.alt{animation-duration:.82s,1.9s;animation-delay:-.35s,-.8s}
+      .circuit{fill:none;stroke-linecap:square;stroke-dasharray:30 150;animation:heroCircuit 3.6s linear infinite}
+      .circuit.fast{animation-duration:2.35s;animation-delay:-1.1s}
+      .core-pulse{transform-box:fill-box;transform-origin:center;animation:heroPulse 2.1s ease-out infinite}
+      .core-pulse.delay{animation-delay:-1.05s}
+      .orbit{transform-box:fill-box;transform-origin:center;animation:heroOrbit 14s linear infinite}
+      .frame-signal{stroke-dasharray:85 1320;animation:heroFrame 5.2s linear infinite}
+      @keyframes heroBolt{to{stroke-dashoffset:-56}}
+      @keyframes heroCircuit{to{stroke-dashoffset:-180}}
+      @keyframes heroFlicker{0%,18%,22%,56%,60%,100%{opacity:.95}20%,58%{opacity:.22}}
+      @keyframes heroPulse{0%{transform:scale(.62);opacity:.9}72%,100%{transform:scale(1.75);opacity:0}}
+      @keyframes heroOrbit{to{transform:rotate(360deg)}}
+      @keyframes heroFrame{to{stroke-dashoffset:-1405}}
+      @media(prefers-reduced-motion:reduce){.bolt,.circuit,.core-pulse,.orbit,.frame-signal{animation:none!important}}
+    </style>
+  </defs>
+  <path d="${shell}" fill="#02030A"/>
+  <g clip-path="url(#hero-shell)">
+    <image href="data:image/png;base64,${pngBase64}" width="1672" height="943" preserveAspectRatio="xMidYMid slice"/>
+    <g clip-path="url(#hero-core-clip)" filter="url(#hero-hot-glow)">
+      <path class="bolt" d="M1336 458L1321 431L1333 403L1319 377L1328 349L1316 318" stroke="#00F7FF" stroke-width="3.2"/>
+      <path class="bolt alt" d="M1336 458L1364 430L1388 415L1401 385L1434 359" stroke="#FF2BD6" stroke-width="3"/>
+      <path class="bolt" d="M1336 458L1372 462L1401 447L1432 459L1471 444L1514 451" stroke="#00F7FF" stroke-width="3.2"/>
+      <path class="bolt alt" d="M1336 458L1363 486L1397 493L1414 521L1454 543L1480 579" stroke="#FF2BD6" stroke-width="3"/>
+      <path class="bolt" d="M1336 458L1324 493L1339 523L1324 553L1338 590L1330 635" stroke="#00F7FF" stroke-width="3.2"/>
+      <path class="bolt alt" d="M1336 458L1302 483L1287 513L1250 526L1235 559L1195 582" stroke="#FF2BD6" stroke-width="3"/>
+      <path class="bolt" d="M1336 458L1300 452L1271 468L1237 451L1203 466L1161 451" stroke="#00F7FF" stroke-width="3.2"/>
+      <path class="bolt alt" d="M1336 458L1308 425L1279 416L1260 381L1227 365L1202 329" stroke="#FF2BD6" stroke-width="3"/>
+    </g>
+    <g fill="none" stroke-width="3" filter="url(#hero-cyan-glow)" opacity=".9">
+      <path class="circuit" d="M1462 358H1512L1545 325H1672" stroke="#00F7FF"/>
+      <path class="circuit fast" d="M1484 401H1550L1578 373H1672" stroke="#FF2BD6"/>
+      <path class="circuit" d="M1494 458H1560L1589 429H1672" stroke="#00F7FF"/>
+      <path class="circuit fast" d="M1485 515H1545L1584 554H1672" stroke="#FF2BD6"/>
+      <path class="circuit" d="M1452 575H1518L1559 616H1672" stroke="#00F7FF"/>
+      <path class="circuit fast" d="M1418 625H1483L1528 670H1672" stroke="#FF2BD6"/>
+      <path class="circuit" d="M1383 299V245L1418 210V0" stroke="#00F7FF"/>
+      <path class="circuit fast" d="M1440 318V270L1474 236V0" stroke="#FF2BD6"/>
+    </g>
+    <circle cx="1336" cy="458" r="61" fill="none" stroke="#FF7AE5" stroke-width="3" class="core-pulse" filter="url(#hero-hot-glow)"/>
+    <circle cx="1336" cy="458" r="61" fill="none" stroke="#00F7FF" stroke-width="2" class="core-pulse delay" filter="url(#hero-cyan-glow)"/>
+    <circle cx="1336" cy="458" r="34" fill="url(#hero-core-flash)" class="core-pulse"/>
+    <circle cx="1336" cy="458" r="190" fill="none" stroke="#00F7FF" stroke-width="2" stroke-dasharray="12 24 55 18" opacity=".68" class="orbit"/>
+  </g>
+  <path d="${shell}" fill="none" stroke="url(#hero-frame)" stroke-width="5"/>
+  <path d="${inner}" fill="none" stroke="#D9FAFF" stroke-opacity=".18" stroke-width="1.5"/>
+  <path d="M48 3H330M3 72V246M3 847L96 940H318M1576 3L1669 96V286M1669 847L1576 940H1422" fill="none" stroke="#FF2BD6" stroke-width="5"/>
+  <path d="M48 3H244M1669 212V502M1669 847L1576 940H1485" class="frame-signal" fill="none" stroke="#00F7FF" stroke-width="5" filter="url(#hero-cyan-glow)"/>
+  </svg>`;
+}
 
 function identity(){return frame('identity','AUTHORIZED OPERATOR','IDENTITY / 87558156',`
   <g transform="translate(54 94)"><rect width="315" height="300" rx="22" fill="#0B0718" stroke="#00F7FF" stroke-opacity=".58"/><path d="M0 28V0h28M287 0h28v28M0 272v28h28M287 300h28v-28" fill="none" stroke="#FF2BD6" stroke-width="2"/><circle cx="157" cy="112" r="50" fill="#140A26" stroke="#8B5CF6"/><path d="M75 253c12-77 152-77 164 0" fill="#140A26" stroke="#8B5CF6"/><path d="M34 42h32M34 42v32M281 42h-32M281 42v32M34 258h32M34 258v-32M281 258h-32M281 258v-32" fill="none" stroke="#00F7FF" stroke-opacity=".8"/><text x="157" y="280" text-anchor="middle" class="mono mint micro">BIOMETRIC LINK VERIFIED</text></g>
