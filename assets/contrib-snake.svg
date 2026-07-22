@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="140" viewBox="0 0 800 140">
+  <defs>
+    <linearGradient id="snakeGrad" x1="0%" x2="100%">
+      <stop offset="0%" stop-color="#9B59FF" />
+      <stop offset="100%" stop-color="#00D9FF" />
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="#06070a" rx="8"/>
+  <!-- background dots -->
+  <g fill="#071026" opacity="0.6">
+    <circle cx="60" cy="20" r="2"/>
+    <circle cx="120" cy="40" r="2"/>
+    <circle cx="240" cy="30" r="2"/>
+    <circle cx="360" cy="60" r="2"/>
+    <circle cx="480" cy="20" r="2"/>
+    <circle cx="600" cy="50" r="2"/>
+  </g>
+  <!-- snake path -->
+  <path id="snakePath" d="M20,100 C120,10 240,10 340,100 C440,190 560,190 660,100 C740,30 780,110 780,110" fill="none" stroke="none"/>
+  <g>
+    <circle r="10" fill="url(#snakeGrad)">
+      <animateMotion dur="6s" repeatCount="indefinite">
+        <mpath xlink:href="#snakePath"/>
+      </animateMotion>
+    </circle>
+    <circle r="7" fill="#ffffff" opacity="0.06">
+      <animateMotion dur="6s" repeatCount="indefinite">
+        <mpath xlink:href="#snakePath"/>
+      </animateMotion>
+    </circle>
+  </g>
+  <text x="20" y="28" fill="#9B59FF" font-family="Roboto Mono, monospace" font-size="12">github-contribution-grid-snake</text>
+</svg>
