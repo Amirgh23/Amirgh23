@@ -1,6 +1,12 @@
 <div align="center">
 
-<img src="./assets/svg/hero.svg" width="100%" alt="AMIRGH23 Neural Nexus command interface" />
+<a href="https://amirgh23.github.io/">
+  <img src="./assets/images/neural-nexus-preview.png" width="100%" alt="Enter the interactive AMIRGH23 Neural Nexus" />
+</a>
+
+<a href="https://amirgh23.github.io/"><strong>ENTER THE INTERACTIVE NEURAL NEXUS ↗</strong></a>
+
+<sub>THREE.JS CORE · INTERACTIVE TERMINAL · COMPLETE REPOSITORY NETWORK · SYSTEM ONLINE</sub>
 
 <br />
 
