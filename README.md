@@ -173,6 +173,27 @@ primary_interests:
   - Local and Secure AI Infrastructure
 ```
 
+<details>
+<summary><code>OPEN://RETRO_ASCII_OPERATOR_PORTRAIT</code></summary>
+
+<br />
+
+<div align="center">
+
+<img
+src="./assets/svg/operator-ascii.svg"
+width="100%"
+alt="AMIRGH23 retro neon ASCII operator portrait"
+/>
+
+<br />
+
+<sub><code>VISUAL_SIGNAL://DECODED</code> · <code>TERMINAL://RETRO_NEON</code></sub>
+
+</div>
+
+</details>
+
 ---
 
 <a id="current-focus"></a>

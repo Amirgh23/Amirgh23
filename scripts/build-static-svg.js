@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 'use strict';
-const fs=require('node:fs'); const path=require('node:path'); const d=require('./svg-design'); const root=path.resolve(__dirname,'..','assets','svg');
+const fs=require('node:fs'); const path=require('node:path'); const d=require('./svg-design'); const root=path.resolve(__dirname,'..','assets','svg'); const asciiSource=fs.readFileSync(path.resolve(__dirname,'..','assets','ascii','operator-portrait.txt'),'utf8');
 const files={
-  'hero.svg':d.hero(), 'identity.svg':d.identity(), 'skills.svg':d.skills(), 'network.svg':d.network(), 'footer.svg':d.footer(),
+  'hero.svg':d.hero(), 'identity.svg':d.identity(), 'skills.svg':d.skills(), 'network.svg':d.network(), 'footer.svg':d.footer(), 'operator-ascii.svg':d.asciiPortrait(asciiSource),
   'headers/00-operator.svg':d.header('00','OPERATOR PROFILE','IDENTITY / MISSION / SYSTEM CONTEXT'),
   'headers/01-focus.svg':d.header('01','CURRENT OPERATIONAL FOCUS','ACTIVE ENGINEERING PRIORITIES'),
   'headers/02-domains.svg':d.header('02','CORE ENGINEERING DOMAINS','KNOWLEDGE / LEARNING / INFRASTRUCTURE'),
