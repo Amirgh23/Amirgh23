@@ -110,7 +110,7 @@ pipeline = {
 ---
 
 ## 📫 Contact Gateway
-- Email: your.email@example.com
+- Email: amirghafarian7879@gmail.com
 - LinkedIn: https://www.linkedin.com/in/amirgh23
 - Telegram: @amirgh23
 
