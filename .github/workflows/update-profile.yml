@@ -1,0 +1,48 @@
+name: Update Neural Nexus
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 3 * * *"
+  push:
+    branches: [main]
+    paths:
+      - "data/**"
+      - "scripts/**"
+      - ".github/workflows/update-profile.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: neural-nexus-profile
+  cancel-in-progress: true
+
+jobs:
+  update:
+    if: github.actor != 'neural-nexus-bot'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Generate public telemetry
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/update-stats.js
+      - name: Validate profile assets
+        run: node scripts/validate-profile.js
+      - name: Commit generated files when changed
+        shell: bash
+        run: |
+          if git diff --quiet -- assets/svg/activity.svg assets/svg/neural-core.svg data/profile.json; then
+            echo "No generated changes."
+            exit 0
+          fi
+          git config user.name "neural-nexus-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- assets/svg/activity.svg assets/svg/neural-core.svg data/profile.json
+          git commit -m "chore(profile): refresh neural telemetry [skip ci]"
+          git push
