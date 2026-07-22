@@ -64,12 +64,18 @@ pipeline = {
 
 ---
 
-## 🔬 Selected Projects
-- Neural Agents Playground — multi-agent RL experiments (link to pinned repo)
-- Persian RAG Toolkit — retrieval-augmented generation for Persian
-- RobotSim Control Suite — sim-to-real RL baselines
+## 🔬 Featured Projects
 
-(پروژه‌ها از ریپوی پین‌شده و محبوب شما انتخاب شده‌اند؛ در PR می‌توانم لیست پروژه‌های دلخواه را جایگزین کنم.)
+- **VGAR-PPO** — Validation-gated adaptive rollout reuse for PPO in continuous-control environments. (Reinforcement Learning, continuous control)
+  - https://github.com/Amirgh23/vgar-ppo
+
+- **Persian GPT-2 QA** — Persian question-answering demo powered by GPT-2. (Persian NLP, Transformers)
+  - https://github.com/Amirgh23/persian-gpt2-qa
+
+- **EHOA Feature Selection** — Leakage-free, reproducible implementation of EHOA for medical feature selection. (Optimization, feature selection)
+  - https://github.com/Amirgh23/ehoa-feature-selection
+
+(برای نمایش پروژه‌های دلخواه، می‌توانم ترتیب یا توضیحات را تغییر دهم.)
 
 ---
 
@@ -90,22 +96,20 @@ pipeline = {
 
 <img src="./assets/contrib-snake.svg" alt="contribution snake" />
 
-این انیمیشن یک نمایش زیبا و نئونی از شبکهٔ مشارکت‌های شماست — برای رفتار واقعی می‌توانم از GitHub API برای خواندن contribution grid و تولید SVG پویا استفاده کنم (نیاز به توکن ندارد برای اکثر موارد عمومی).
+این انیمیشن یک نمایش زیبا و نئونی از شبکهٔ مشارکت‌های شماست — برای رفتار واقعی می‌توانم از GitHub API برای خواندن contribution grid و تولید SVG پویا استفاده کنم.
 
 ---
 
 ## 📚 Publications / Papers
 
-- [عنوان مقاله ۱ — Journal / Conference (سال)](#)
-- [عنوان مقاله ۲ — Journal / Conference (سال)](#)
-
-(لطفاً لیست مقالات یا DOIها را بفرست تا بخش Publications دقیق شود.)
+- (در صورت تمایل لیست مقالات خود را بفرست تا این بخش را دقیق کنم.)
+- Publication placeholder: [Title — Venue (Year)](link_or_doi)
 
 ---
 
 ## 🔗 Open Source Contributions
-- Contributor to: repo-A, repo-B, awesome-rl
-- Maintainer: robotics-utils
+- Contributor to: rhuds-pro, vgar-ppo, persian-gpt2-qa
+- Maintainer: ehoa-feature-selection
 
 ---
 
